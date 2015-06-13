@@ -1,0 +1,17 @@
+{
+   "content_scripts": [ {
+      "matches": [ "https://*/*, http://www.facebook.com/*", "https://www.facebook.com/*" ],
+      "css" : ["styles.css"],
+	  "all_frames": true
+   } ],
+   "web_accessible_resources": ["styles.css"],
+   "description": "Facebook made pretty.",
+   "icons": {
+      "128": "images/iconfb.png"
+   },
+   "manifest_version": 2,
+   "name": "Facebook Beautiful",
+   "permissions": [ "http://www.facebook.com/", "https://www.facebook.com/", "tabs", "storage" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.0.4"
+}
